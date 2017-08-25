@@ -1,0 +1,9 @@
+<app-add-article (addArticle)="addArticle($event)">
+</app-add-article>
+
+<app-article
+  *ngFor="let item of sortArticle()"
+  [article]="item"
+  (voiteUp)="voiteUp($event)"
+  (voiteDown)="voiteDown($event)">
+</app-article>

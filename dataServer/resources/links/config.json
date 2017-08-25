@@ -1,0 +1,29 @@
+{
+	"type": "Collection",
+	"properties": {
+		"title": {
+			"name": "title",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "title",
+			"order": 0
+		},
+		"link": {
+			"name": "link",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "link",
+			"order": 1
+		},
+		"points": {
+			"name": "points",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "points",
+			"order": 2
+		}
+	}
+}

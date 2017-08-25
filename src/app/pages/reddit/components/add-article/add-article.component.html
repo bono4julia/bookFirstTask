@@ -1,0 +1,25 @@
+<form class="ui large form segment" 
+  [formGroup]="articleForm"
+  (ngSubmit)="onAddArticle()">
+
+  <h3 class="ui header">Add a link</h3>
+
+  <div class="field">
+    <label for="nameArticle">Title</label>
+    <input name="nameArticle" type="text" 
+      formControlName="title">
+    <span *ngIf="submitted && articleForm.controls.title.errors?.required">Field is required!</span>
+  </div>
+
+  <div class="field">
+    <label for="linkArticle">Article</label>
+    <input name="linkArticle" type="text"
+      formControlName="link">
+    <span *ngIf="submitted && articleForm.controls.link.errors?.required">Field is required!</span>
+  </div>
+
+  <button type="submit">
+    Submit link
+  </button>
+
+</form>
